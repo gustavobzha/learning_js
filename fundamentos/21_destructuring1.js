@@ -13,6 +13,9 @@ const { nome, idade } = pessoa // extrai do objeto pessoa os atributos nome e id
 console.log(nome, idade)
 console.log(pessoa)
 
+const { atributo1, atributo2 } = pessoa
+console.log(atributo1, atributo2) // se não encontra a chave, a const criada se torna undefined
+
 const { nome: n, idade: i } = pessoa // Cria uma variável "n" a partir do nome extraído do objeto, o mesmo vale par ai e idade
 console.log(n, i)
 
@@ -26,3 +29,6 @@ console.log(logradouro, numero, cep)
 // Aqui retornará erro pois conta é "undefined" e não tem como existir um objeto dentro de um "undefined"
 /* const { conta: { ag, num } } = pessoa
 console.log(ag, num) */
+
+// Para acontecer o destructuring não precisa necessariamente usar o tipo const.
+
